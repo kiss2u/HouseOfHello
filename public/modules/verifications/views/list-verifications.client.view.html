@@ -1,0 +1,20 @@
+<section data-ng-controller="VerificationsController" data-ng-init="find()">
+    <div class="page-header">
+        <h1>Verifications</h1>
+    </div>
+    <div class="list-group">
+        <a data-ng-repeat="verification in verifications" data-ng-href="#!/verifications/{{verification._id}}" class="list-group-item">
+			<small class="list-group-item-text">
+                {{verification.agentID}}
+				Posted on
+				<span data-ng-bind="verification.created | date:'medium'"></span>
+				by
+				<span data-ng-bind="verification.user.displayName"></span>
+			</small>
+			<h4 class="list-group-item-heading" data-ng-bind="verification.name"></h4>
+        </a>
+    </div>
+    <div class="alert alert-warning text-center" data-ng-hide="!verifications.$resolved || verifications.length">
+    	No Verifications yet, why don't you <a href="/#!/verifications/create">create one</a>?
+    </div>
+</section>

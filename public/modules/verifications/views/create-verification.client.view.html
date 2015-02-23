@@ -1,0 +1,100 @@
+<section data-ng-controller="VerificationsController">
+    <div class="page-header">
+        <h1>New Verification</h1>
+    </div>
+    <div class="col-md-12 form-bg">
+        <form class="" data-ng-submit="create()" novalidate>
+            <fieldset>
+                <div class = "row">
+                    <div data-ng-show="error" class="text-center text-danger form-group">
+
+                        <span class="glyphicon glyphicon-exclamation-sign"></span>
+                        <strong data-ng-bind="error"></strong>
+
+                    </div>
+    
+                    <div class = "col-sm-6">
+                        <div class="form-group">
+                            <label class="control-label" for="Verification Number">Enter the new Verification Number</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="veriNo" id="veriNo" class="form-control" placeholder="Verification Number" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-sm-3">
+                        
+                        <div class="form-group">
+                            <label class="control-label" for="Verification Number">Enter the new Material</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="material" id="material" class="form-control" placeholder="New material">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "col-sm-3">
+                        
+                        <div class="form-group">
+                            <label class="control-label" for="Verification Number">Enter the new Style</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="style" id="style" class="form-control" placeholder="New style">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class = "row">
+                    
+                    <div class = "col-sm-3">
+                        <div class="form-group">
+                            <label class="control-label" for="Verification Number">Enter the Size</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="size" id="size" class="form-control" placeholder="Size">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class = "col-sm-3">
+                        <div class="form-group">
+                            <label class="control-label" for="Verification Number">Enter the Veins</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="veins" id="veins" class="form-control" placeholder="Veins">
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class = "col-sm-3">
+                        <div class="form-group">
+                            <label class="control-label" for="Verification Number">Enter the color</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="color" id="color" class="form-control" placeholder="New color">
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class = "col-sm-3">
+                        <div class="form-group">
+                            <label class="control-label" for="Verification Number">Enter the agent's ID</label>
+                            <div class="controls">
+                                <input type="text" data-ng-model="agentID" id="agentID" class="form-control" placeholder="Agent's ID">
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+               
+                <div class="text-center form-group">
+                    <button type="submit" class="btn btn-success btn-lg btn-block">Submit & Save</button>
+                    
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</section>
