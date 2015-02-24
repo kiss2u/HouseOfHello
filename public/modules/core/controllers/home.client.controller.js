@@ -1,29 +1,25 @@
 'use strict';
 
 
-angular.module('core').controller('HomeController', '$scope', 'Authentication',
-	function($scope, Authentication) {
+angular.module('core').controller('HomeController', ['$scope',
+	function($scope) {
 		// This provides Authentication context.
 		//$scope.authentication = Authentication;
 
-		$scope.myInterval = 5000;
+		$scope.myInterval = 500;
   		var slides = $scope.slides = [
   			{
-  				image: 'modules/core/img/sildes/sildes-1.jpg',
-  				text: 'kelly'
+  				image: 'http://www.houseofhello.com.hk/media/wysiwyg/slider_img_5.jpg',
+  				text: 'purple'
   			},
   			{
-  				image: 'modules/core/img/sildes/sildes-2.jpg',
-  				text: 'sonia'
+  				image: 'http://www.houseofhello.com.hk/media/wysiwyg/slider_img_2.jpg',
+  				text: 'black'
   			},
   			{
-  				image: 'modules/core/img/sildes/sildes-3.jpg',
-  				text: 'ares'
-  			},
-  			{
-  				image: 'modules/core/img/sildes/sildes-4.jpg',
-  				text: 'justin'
-  			},
+  				image: 'http://www.houseofhello.com.hk/media/wysiwyg/slider_img.jpg',
+  				text: 'green'
+  			}
   		];
 	}
-);
+]);

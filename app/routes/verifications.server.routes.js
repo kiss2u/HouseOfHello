@@ -16,10 +16,10 @@ module.exports = function(app) {
 		.delete(users.requiresLogin, verifications.hasAuthorization, verifications.delete);
 
 	// Finish by binding the Verification middleware
-	//app.route('/verify/:veriNo')
-	//	.get(verifications.list);
+	app.route('/verify')
+		.get(verifications.list);
 
 
 	app.param('verificationId', verifications.verificationByID);
-	//app.param('veriNo', verifications.veriNo);
+
 };

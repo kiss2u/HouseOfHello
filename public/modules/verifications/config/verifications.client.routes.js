@@ -22,7 +22,7 @@ angular.module('verifications').config(['$stateProvider',
 			templateUrl: 'modules/verifications/views/edit-verification.client.view.html'
 		}).
 		state('verifyByNo',{
-			url: '/verify/:veriNo',
+			url: '/verify',
 			templateUrl: 'modules/users/views/VER/ver.client.view.html'
 		});
 
