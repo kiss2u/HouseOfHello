@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://kiss2u:nbzzd61570@c280.lighthouse.0.mongolayer.com:10280,c280.lighthouse.1.mongolayer.com:10280/HouseOfHello?replicaSet=set-54ec1f4c7da3b3cae9001024',
+	db: 'mongodb://localhost/houseofhello-dev',
 	app: {
 		title: 'Welcome to House Of Hello!'
 	},
